@@ -43,6 +43,10 @@ mkdir -p $SCRATCH/projects/ee628/outputs/dev
 for instance in run dev; do
   ln -s $SCRATCH/projects/ee628/data/dev $HOME/projects/ee628/$instance/data/dev
   ln -s $SCRATCH/projects/ee628/outputs/dev $HOME/projects/ee628/$instance/outputs/dev
+
+  ln -s  /iopsstor/scratch/cscs/smoalla/projects/ee628/data/shared $HOME/projects/ee628/$instance/data/shared
+  ln -s /iopsstor/scratch/cscs/smoalla/projects/ee628/outputs/shared $HOME/projects/ee628/$instance/outputs/shared
+
 done
 
 ```
