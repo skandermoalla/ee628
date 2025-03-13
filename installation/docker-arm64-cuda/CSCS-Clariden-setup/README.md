@@ -151,14 +151,14 @@ cd installation/docker-arm64-cuda
 
 ## Getting your image (if already built, or just built)
 
-You will find the image to use for this project at `/capstor/store/cscs/swissai/a10/container-images/a10+smoalla+ee628+arm64-cuda-root-latest.sqsh`.
+You will find the image to use for this project at `/iopsstor/scratch/cscs/smoalla/projects/ee628/data/shared/a10+smoalla+ee628+arm64-cuda-root-latest.sqsh`.
 Copy it or create a symlink to it where you keep your images. E.g.,
 ```bash
 # Make a directory where you store your images
 # Add it to your bashrc as it'll be used often
 CONTAINER_IMAGES=$SCRATCH/container-images
 mkdir -p $CONTAINER_IMAGES
-cp /capstor/store/cscs/swissai/a10/container-images/a10+smoalla+ee628+arm64-cuda-root-latest.sqsh $CONTAINER_IMAGES/a10+$(id -un)+ee628+arm64-cuda-root-latest.sqsh
+cp /iopsstor/scratch/cscs/smoalla/projects/ee628/data/shared/a10+smoalla+ee628+arm64-cuda-root-latest.sqsh` $CONTAINER_IMAGES/a10+$(id -un)+ee628+arm64-cuda-root-latest.sqsh
 ```
 
 Example submit scripts are provided in the `example-submit-scripts` directory and are used in the following examples.
